@@ -1,3 +1,11 @@
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: #FAF9F0;
 }
@@ -72,4 +80,22 @@ body {
 
 .profile {
     border-radius: 50%;
+}
+
+.experience-tab {
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EDEBCA;
+}
+
+.press-item {
+    background-color: #EDEBCA;
+    border-radius: 18px;
+}
+
+.press-item > img {
+    border-radius: 18px;
+    height: 200px;
+    margin: 10px;
 }
