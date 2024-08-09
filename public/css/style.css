@@ -6,6 +6,21 @@ body {
     color: #121435;
 }
 
+.nav-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #121435;
+    transition: 0s;
+}
+
+.nav-link:hover {
+    color: #FF5722;
+}
+
+.active > .nav-link {
+    color: #FF5722;
+}
+
 .square:after {
     content: "";
     display: block;
@@ -53,4 +68,8 @@ body {
 .col-4-8 {
     flex: 0 0 auto;
     width: 40%;
+}
+
+.profile {
+    border-radius: 50%;
 }
