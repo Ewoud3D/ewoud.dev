@@ -91,11 +91,26 @@ body {
 
 .press-item {
     background-color: #EDEBCA;
-    border-radius: 18px;
+    border-radius: 28px;
+    padding: 0px;
+    text-decoration: none;
 }
 
 .press-item > img {
     border-radius: 18px;
     height: 200px;
     margin: 10px;
+    float: left;
+}
+
+.press-item > div {
+    padding: 18px;
+    height: 100%;
+    position: relative;
+}
+
+.press-date {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
 }
