@@ -47,17 +47,6 @@ body {
     background-size: cover;
 
     overflow: hidden;
-
-    transform: scale(1);
-    transition: transform 0.1s;
-}
-
-.tile:hover {
-    transform: scale(1.03);
-}
-
-.tile:active {
-    transform: scale(1);
 }
 
 .tile h4 {
@@ -131,19 +120,13 @@ body {
         drop-shadow(0 5px 0 #EDEBCA)
         drop-shadow(-5px 0 0 #EDEBCA) 
         drop-shadow(0 -5px 0 #EDEBCA);
+}
 
+.card-icon-animation {
     transition: 0.1s;
 }
 
-.card-item:hover {
-    transform: scale(1.03);
-}
-
-.card-item:active {
-    transform: scale(1);
-}
-
-.card-item:hover > div > .card-icon {
+.card-item:hover > div > .card-icon-animation {
     transform: translate(-50%, 20%);
 }
 
@@ -152,16 +135,6 @@ body {
     border-radius: 28px;
     padding: 0px;
     text-decoration: none;
-
-    transition: transform 0.1s;
-}
-
-.press-item:hover {
-    transform: scale(1.03);
-}
-
-.press-item:active {
-    transform: scale(1);
 }
 
 .press-item > img {
@@ -183,10 +156,15 @@ body {
     right: 18px;
 }
 
-.no-transition * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
+.scale-animation {
+    transform: scale(1);
+    transition: transform 0.1s;
+}
+
+.scale-animation:hover {
+    transform: scale(1.03);
+}
+
+.scale-animation:active {
+    transform: scale(1);
 }

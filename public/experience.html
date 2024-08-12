@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
     </header>
 
-    <body class="no-transition">
+    <body>
         <div class="container">
             <br>
             <nav class="navbar navbar-expand-lg">
@@ -61,7 +61,7 @@
             <h2 class="typewrite" data-period="2000" data-type='[ "Technical Artist", "Programmer", "Console Porter", "3D Artist", "Indie Game Marketeer", "Mocap Director?" ]'>Technical Artist</h2></center>
             <br><br>
             <div class="row gy-4">
-                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item">
+                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/code.svg"/>
@@ -73,7 +73,7 @@
                     </div>
                 </a>
                 <div class="col-1-5"></div>
-                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item">
+                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/cube.svg"/>
@@ -85,7 +85,7 @@
                     </div>
                 </a>
                 <div class="col-1-5"></div>
-                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item">
+                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/rainbow.svg"/>
@@ -99,7 +99,7 @@
 
                 <div class="w-100"></div>
 
-                <a href="porting.html" class="col card-item">
+                <a href="porting.html" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/controller.svg"/>
@@ -111,7 +111,7 @@
                     </div>
                 </a>
                 <div class="col-1-5"></div>
-                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item">
+                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/graph.svg"/>
@@ -123,7 +123,7 @@
                     </div>
                 </a>
                 <div class="col-1-5"></div>
-                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item">
+                <a href="https://23.game-access.com/conference/speakers/ewoud-van-der-werf/" class="col card-item scale-animation">
                     <div style="position: relative;">
                         <img class="card-img" src="img/schim.webp">
                         <img class="card-icon" src="icons/upload.svg"/>
@@ -141,10 +141,13 @@
     
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typewriter.js"></script>
-
     <script>
-        window.onload = (event) => {
-            document.body.classList.remove("no-transition");
-        };
+        window.addEventListener("load", addAnimations, true);
+        function addAnimations()
+        {
+            const cardIcons = document.getElementsByClassName("card-icon");
+            for (let i = 0; i < cardIcons.length; i++)
+                cardIcons[i].classList.add("card-icon-animation");
+        }
     </script>
 </html>
