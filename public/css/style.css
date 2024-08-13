@@ -116,10 +116,19 @@ body {
 
     transform: translate(-50%, 40%);
 
-    filter: drop-shadow(5px 0 0 #EDEBCA) 
-        drop-shadow(0 5px 0 #EDEBCA)
-        drop-shadow(-5px 0 0 #EDEBCA) 
-        drop-shadow(0 -5px 0 #EDEBCA);
+    /* filter: drop-shadow(5px 0 0 #EDEBCA) 
+            drop-shadow(0 5px 0 #EDEBCA)
+            drop-shadow(-5px 0 0 #EDEBCA) 
+            drop-shadow(0 -5px 0 #EDEBCA); */
+
+    filter: drop-shadow(4px 0 0 #EDEBCA) 
+            drop-shadow(0 4px 0 #EDEBCA)
+            drop-shadow(-4px 0 0 #EDEBCA) 
+            drop-shadow(0 -4px 0 #EDEBCA)
+            drop-shadow(1px 1px 0 #EDEBCA)
+            drop-shadow(1px -1px 0 #EDEBCA)
+            drop-shadow(-1px -1px 0 #EDEBCA)
+            drop-shadow(-1px 1px 0 #EDEBCA);
 }
 
 .card-icon-animation {
