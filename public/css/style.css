@@ -178,7 +178,7 @@ a {
     transform: scale(1.03);
 }
 
-.scale-animation:active {
+.scale-click:active {
     transform: scale(1);
 }
 
