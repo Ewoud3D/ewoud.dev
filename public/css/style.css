@@ -14,6 +14,10 @@ body {
     color: #121435;
 }
 
+a {
+    color: #FF5722;
+}
+
 .nav-link {
     font-size: 18px;
     font-weight: bold;
@@ -176,4 +180,8 @@ body {
 
 .scale-animation:active {
     transform: scale(1);
+}
+
+.video {
+    border-radius: 18px;
 }
