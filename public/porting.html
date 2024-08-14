@@ -67,7 +67,7 @@
                         <!-- <h3><center>Porting</center></h3> -->
                         <p>It's an incredible feeling to play your own game on your favorite home console, I hope to share this feeling with other indie game developers and help them port their unique experiences.</p>
                         <p>If you are looking to port your Unity game I would be happy to get in touch to explore the options!</p>
-                        <center><p>You can reach me at <a href="mailto:hi@ewoud.dev">hi@ewoud.dev</a></p></center>
+                        <center><p>You can reach me at <a class="email" href="#">hi [at] ewoud [dot] dev</a></p></center>
                     </div>
                 </div>
                 <div class="col-3"></div>
@@ -115,4 +115,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/fix-icon-animations.js"></script>
+    <script>
+        var email = document.getElementsByClassName("email");
+        for(var i = 0; i < email.length; i++) 
+        {
+            email[i].innerHTML = email[i].innerHTML.replace(" [at] ", "@").replace(" [dot] ", ".");
+            email[i].href = "mailto:" + email[i].innerHTML;
+        }
+    </script>
 </html>
