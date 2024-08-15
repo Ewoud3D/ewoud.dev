@@ -141,13 +141,6 @@ a {
     transition: 0.1s;
 }
 
-@media screen and (min-width: 768px) {
-    .card-item:hover > div > .card-icon-animation {
-        transform: translate(-50%, 20%);
-    }
-}
-
-
 .press-item {
     background-color: #EDEBCA;
     border-radius: 28px;
@@ -165,6 +158,7 @@ a {
 .press-item > div {
     padding: 18px;
     height: 100%;
+    overflow-y: hidden;
     position: relative;
 }
 
@@ -179,12 +173,32 @@ a {
     transition: transform 0.1s;
 }
 
-.scale-animation:hover {
-    transform: scale(1.03);
+@media screen and (min-width: 768px) {
+    .card-item:hover > div > .card-icon-animation {
+        transform: translate(-50%, 20%);
+    }
+    
+    .scale-animation:hover {
+        transform: scale(1.03);
+    }
+    
+    .scale-click:active {
+        transform: scale(1);
+    }
 }
 
-.scale-click:active {
-    transform: scale(1);
+@media screen and (max-width: 768px) {
+    .press-item {
+        margin: 00px 10px 0px 10px;
+    }
+
+    .press-item > div > p {
+        font-size: 0px;
+    }
+
+    .press-item > img {
+        height: 150px;
+    }
 }
 
 .video {
