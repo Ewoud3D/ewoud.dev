@@ -141,9 +141,12 @@ a {
     transition: 0.1s;
 }
 
-.card-item:hover > div > .card-icon-animation {
-    transform: translate(-50%, 20%);
+@media screen and (min-width: 768px) {
+    .card-item:hover > div > .card-icon-animation {
+        transform: translate(-50%, 20%);
+    }
 }
+
 
 .press-item {
     background-color: #EDEBCA;
