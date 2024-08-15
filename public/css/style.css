@@ -166,6 +166,7 @@ a {
     position: absolute;
     bottom: 18px;
     right: 18px;
+    text-align: right;
 }
 
 .scale-animation {
@@ -202,6 +203,21 @@ a {
 
     .press-item > img {
         height: 150px;
+    }
+
+    .press-item > div {
+        padding-left: 0px;
+    }
+}
+
+.nav-spacer {
+    display: inline-block;
+    margin: 2px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-spacer {
+        display: none;
     }
 }
 
