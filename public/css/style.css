@@ -192,6 +192,10 @@ a {
         margin: 00px 10px 0px 10px;
     }
 
+    .press-item > div > h2 {
+        font-size: 22px;
+    }
+
     .press-item > div > p {
         font-size: 0px;
     }
