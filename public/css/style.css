@@ -40,6 +40,12 @@ a {
     padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
+.rectangle:after {
+    content: "";
+    display: block;
+    padding-top: 47%;
+}
+
 .tile {
     background-color: #EDEBCA;
     border-radius: 18px;
@@ -65,11 +71,6 @@ a {
     bottom: 0px;
     height: 30px;
     margin: 10px;
-}
-
-.col-4-8 {
-    flex: 0 0 auto;
-    width: 40%;
 }
 
 .col-1-5 
