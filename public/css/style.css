@@ -23,6 +23,7 @@ a {
     font-weight: bold;
     color: #121435;
     transition: 0s;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -184,4 +185,8 @@ a {
 
 .video {
     border-radius: 18px;
+}
+
+.navbar-toggler {
+    color: #121435;
 }
