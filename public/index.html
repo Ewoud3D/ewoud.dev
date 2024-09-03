@@ -65,12 +65,13 @@
             
             <br>
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col"></div>
-                <!-- <img class="col-5 col-md-4 col-lg-3 img-fluid profile" src="img/profile.webp"/> -->
+                <img class="col-5 col-md-4 col-lg-3 img-fluid profile" src="img/profile.webp"/>
                 <canvas id="characterCanvas" class="col-6" height="200px"></canvas>
                 <div class="col"></div>
-            </div>
+            </div> -->
+            <canvas id="characterCanvas" width="600px" height="500px"></canvas>
 
             <br>
             <center><h1><b>Ewoud van der Werf</b></h1>
@@ -168,8 +169,10 @@
     </body>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typewriter.js"></script>
-    <script src="js/three.js"></script> <!-- TODO: Use a new version-->
-    <script>
+    <!-- <script src="js/three.js"></script> TODO: Use a new version -->
+    <!-- <script type="module">
+        import * as THREE from 'three';
+        
         const canvas = document.getElementById("characterCanvas");
         const renderer = new THREE.WebGLRenderer({antialias: false, alpha: false, canvas});
 
@@ -188,8 +191,8 @@
         camera.position.y = 7.25;
         camera.position.z = 5.939698;
 
-        camera.rotateY(THREE.Math.degToRad(45));
-        camera.rotateX(THREE.Math.degToRad(-35));
+        camera.rotateY(THREE.MathUtils.degToRad(45));
+        camera.rotateX(THREE.MathUtils.degToRad(-35));
 
         const scene = new THREE.Scene();
 
@@ -209,10 +212,10 @@
         const planeGeometry = new THREE.PlaneGeometry(planeWidth, planeLength);
         const planeMaterial = new THREE.MeshLambertMaterial({color: 0x78B7D0});
         const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-        plane.rotation.x = THREE.Math.degToRad(-90);
+        plane.rotation.x = THREE.MathUtils.degToRad(-90);
         scene.add(plane);
 
         renderer.render(scene, camera);
-    </script>
-    <!-- <script src="js/character.js"></script> -->
+    </script> -->
+    <script type="module" src="js/character.js"></script>
 </html>
