@@ -186,6 +186,10 @@ a {
     .scale-click:active {
         transform: scale(1);
     }
+
+    .navbar {
+        padding-top: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -207,6 +211,10 @@ a {
 
     .press-item > div {
         padding-left: 0px;
+    }
+
+    .navbar {
+        padding-top: 12px;
     }
 }
 
