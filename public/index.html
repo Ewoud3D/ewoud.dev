@@ -9,7 +9,7 @@
         <title>Ewoud van der Werf</title>
         <meta name="description" content="Ewoud van der Werf is a game developer, programmer and technical artist. He released the shadow platformer, SCHiM, in 2024.">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css?v=1.1">
         <link rel="stylesheet" href="css/style.css?v=1.1">
 
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -74,7 +74,7 @@
             <center><h1><b>Ewoud van der Werf</b></h1>
             <h2 class="typewrite" data-period="2000" data-type='[ "Technical Artist", "Programmer", "Console Porting", "Indie Game Developer", "3D Artist", "Indie Marketing" ]'>Technical Artist</h2></center>
             <br><br>
-            <div class="row gx-4 gy-4 row-cols-2 row-cols-md-3 row-cols-lg-5">
+            <div class="row gx-4 gy-4 row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                 <div class="col">
                     <a href="https://schim.iam8bit.com/us/#buy">
                         <div class="tile square scale-animation scale-click" style="background-image: url('img/schim-physicals.webp');">
@@ -93,7 +93,7 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-8 col-lg-4-8">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-4-8">
                     <a href="https://youtu.be/czod2Cny6oM">
                         <div class="tile rectangle scale-animation scale-click" style="background-image: url('img/schim-trailer.webp');">
                             <img class="tile-icon" src="icons/play.svg"/>
@@ -136,7 +136,8 @@
                     </a>
                 </div>
 
-                <div class="col">
+                <!-- Hidden on lg - temporary fix -->
+                <div class="col d-lg-none d-xl-block">
                     <a href="https://schim.art">
                         <div class="tile square scale-animation scale-click" style="background-image: url('img/schim-art.webp');">
                             <img class="tile-icon" src="icons/game.svg"/>
@@ -144,9 +145,18 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-8 col-lg-4-8">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-4-8">
                     <a href="https://extra-nice.itch.io/skirmish">
                         <div class="tile rectangle scale-animation scale-click" style="background-image: url('img/skirmish.webp');">
+                            <img class="tile-icon" src="icons/game.svg"/>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Visible on lg - temporary fix -->
+                <div class="col d-none d-lg-block d-xl-none">
+                    <a href="https://schim.art">
+                        <div class="tile square scale-animation scale-click" style="background-image: url('img/schim-art.webp');">
                             <img class="tile-icon" src="icons/game.svg"/>
                         </div>
                     </a>
