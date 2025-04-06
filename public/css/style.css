@@ -236,3 +236,72 @@ a {
 .navbar-toggler {
     color: #121435;
 }
+
+.game-cover {
+    text-decoration: none;
+}
+
+.game-cover > div > .img-fluid {
+    border-radius: 18px;
+    /* outline-style: solid;
+    outline-width: 1px;
+    outline-color: #121435; */
+}
+
+.game-cover > div {
+    transition: all 0.1s;
+    transform-origin: center right;
+    transform: rotate3d(0, 1, 0, 26deg);
+    transform-style: preserve-3d;
+    margin-bottom: 10px;
+}
+
+.spine {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    line-height: 35px;
+    padding: 0px;
+    margin: 0px;
+    top: 0%;
+    left: 0%;
+    vertical-align: middle;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #121435;
+    transform-origin: left;
+    transform: rotateY(-90deg) translateX(-35px);
+}
+
+.cover-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #EDEBCA;
+    transform: translate3d(0px, 0px, -35px);
+    left: 0px;
+    top: 0px;
+    border-radius: 18px;
+    
+    /* outline-style: solid;
+    outline-width: 1px;
+    outline-color: #121435; */
+    /* box-shadow: 0px 0px 33px -15px rgba(18,20,53,0.5); */
+}
+
+.rating {
+    position: absolute;
+    height: 12%;
+    left: 5%;
+    bottom: 4%;
+}
+
+.game-cover:hover > div {
+    transform-origin: center right;
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+
+.project-tag {
+    background-color: #EDEBCA;
+}
