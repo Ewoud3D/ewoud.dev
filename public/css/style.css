@@ -305,3 +305,19 @@ a {
 .project-tag {
     background-color: #EDEBCA;
 }
+
+/* override primary color of buttons. TODO: Use sass and change colors the proper way */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-outline-primary:hover {
+    background-color: #FF5722 !important;
+    border-color: #FF5722 !important;
+    transition: all 0s;
+}
+
+.btn-outline-primary {
+    color: #FF5722;
+    border-color: #FF5722;
+    transition: all 0s;
+}
