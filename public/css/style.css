@@ -321,3 +321,8 @@ a {
     border-color: #FF5722;
     transition: all 0s;
 }
+
+.game-screenshot {
+    margin-bottom: 12px;
+    border-radius: 18px;
+}
