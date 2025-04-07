@@ -329,16 +329,19 @@ a {
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
     background-color: #FF5722 !important;
     border-color: #FF5722 !important;
     transition: all 0s;
+    border-radius: 50vh;
 }
 
 .btn-outline-primary {
     color: #FF5722;
     border-color: #FF5722;
     transition: all 0s;
+    border-radius: 50vh;
 }
 
 .game-screenshot {
