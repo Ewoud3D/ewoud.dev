@@ -46,3 +46,12 @@ function filterGame(filter)
 			game.style.display = "none";
 	}
 }
+
+
+window.addEventListener("load", addAnimations, true);
+function addAnimations()
+{
+    const cardIcons = document.getElementsByClassName("game-cover");
+    for (let i = 0; i < cardIcons.length; i++)
+        cardIcons[i].classList.add("game-cover-animation");
+}

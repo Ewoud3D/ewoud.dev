@@ -191,6 +191,10 @@ a {
         padding-top: 20px;
     }
 
+    .game-cover-animation > div {
+        transition: transform 0.1s;
+    }
+
     .game-cover > div {
         transform: rotate3d(0, 1, 0, 26deg);
     }
@@ -268,7 +272,6 @@ a {
 }
 
 .game-cover > div {
-    transition: all 0.1s;
     transform-origin: center right;
     /* transform: rotate3d(0, 1, 0, 26deg); */
     transform-style: preserve-3d;
