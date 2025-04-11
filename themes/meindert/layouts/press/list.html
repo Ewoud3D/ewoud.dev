@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<div class="row gy-3">
+{{ $pages := .Data.Pages }}
+{{ range $index, $page := $pages }}
+	<div class="col-2 d-none d-xl-block"></div>
+	<a href="{{ $page.Params.Url }}" class="col press-item scale-animation scale-click">
+	{{ with $page.Resources.GetMatch "thumb.*" }}
+	<img src="{{ .RelPermalink }}"/>
+	{{ end }}
+	<div>
+	<h2>{{ $page.Title }}</h2>
+	{{ $page.Content }}
+	<div class="press-date">{{ $page.Params.Location }} - {{ $page.Date.Format "2 January, 2006" }}</div>
+	</div>
+	</a>
+	<div class="col-2 d-none d-xl-block"></div>
+
+	{{ if not (eq (add $index 1) (len $pages)) }}
+		<div class="w-100"></div>
+	{{ end }}
+
+{{ end }}
+</div>
+
+{{ partial "footer.html" . }}
