@@ -4,5 +4,8 @@ date: 2023-04-14
 params:
   location: "Online"
   url: "https://80.lv/articles/the-creative-and-technical-aspects-of-developing-schim/"
+build:
+  render: never
 ---
+
 "Ewoud van der Werf outlined the perks and obstacles of indie game development and provided insight into creating SCHiM's art style, level design, and challenge balance."
