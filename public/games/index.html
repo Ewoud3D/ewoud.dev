@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
 
-        <title>Toolbox - Ewoud van der Werf</title>
+        <title>Games - Ewoud van der Werf</title>
         <meta name="description" content="Ewoud van der Werf is a game developer, programmer and technical artist. He released the shadow platformer, SCHiM, in 2024.">
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css?v=1.1">
+        <link rel="stylesheet" href="../css/style.css?v=1.2">
 
         <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -47,7 +47,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/">Fun</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="/games/">Games</a>
                         </li>
                         <li class="nav-item">
@@ -68,39 +68,42 @@
             <br>
             <center><h1><b>Ewoud van der Werf</b></h1>
             <h2 class="typewrite" data-period="2000" data-type='[ "Technical Artist", "Programmer", "Console Porting", "Indie Game Developer", "3D Artist", "Indie Marketing" ]'>Technical Artist</h2></center>
-            <br><br>
-            <h1><b>Toolbox:</b><br>My personal SDK</h1>
-            <p>My very first interaction with any creative software was with Windows Movie Maker when I was 9. Using my mom's camcorder I used to shoot my Lego minifigures picture by picture and watch the movements unfold in the primitive editing software.<br>At that age, I always wanted to become an animator first. Just before entering high school I took an interest in computer-generated animation and found out about Blender. A program that would change my life, and introduce me to game development.</p>
-            <p>In this article I would like to simply list all the programs that I am using, I am always on the lookout to experiment with new software, especially open-source software!</p>
-            <h2>Game Development</h2>
-            <ul>
-                <li><a target="_blank" href="https://blender.org/">Blender</a></li>
-                <li><a target="_blank" href="https://unity.com/">Unity</a></li>
-                <li><a target="_blank" href="https://godotengine.org">Godot</a> (learning it right now, it's amazing! 😄)</li>
-                <li><a target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-                <li><a target="_blank" href="https://fmod.com/">FMOD</a></li>
-                <li><a target="_blank" href="https://plasticscm.com/">Plastic SCM</a> (used for past projects, currently exploring other solutions)</li>
-            </ul>
-            <h2>Production</h2>
-            <ul>
-                <li><a target="_blank" href="https://affinity.serif.com/designer/">Affinity Designer</a></li>
-                <li><a target="_blank" href="https://affinity.serif.com/photo/">Affinity Photo</a></li>
-                <li><a target="_blank" href="https://blender.org/">Blender</a> (I also use Blender for simple video editing, it works great for what I need it for)</li>
-                <li><a target="_blank" href="https://bandisoft.com/honeycam/">Honeycam</a> (IMO the best gif recorder at the moment, sadly not FOSS)</li>
-                <li><a target="_blank" href="https://obsproject.com/">OBS Studio</a></li>
-                <li><a target="_blank" href="https://www.audacityteam.org/">Audacity</a></li>
-            </ul>
-            <h2>Productivity</h2>
-            <ul>
-                <li><a target="_blank" href="https://obsidian.md/">Obsidian</a> (currently my favorite note taking app, I use it both personally and professionally)</li>
-                <li><a target="_blank" href="https://www.notion.so/">Notion</a></li>
-                <li><a target="_blank" href="https://discord.com/">Discord</a> (while not ideal in a professional environment, a lot of important conversations are done through Discord)</li>
-            </ul>
-            <h2>Other</h2>
-            <ul>
-                <li><a target="_blank" href="https://gohugo.io/">Hugo</a> (at the time of writing this post, I am converting ewoud.dev to Hugo)</li>
-                <li><a target="_blank" href="https://threejs.org/">Three.js</a> (used for schim.art, and when displaying 3D on the web)</li>
-            </ul>
+            <!-- <br><br> -->
+            <div class="filters">
+                <button id="filter-all" type="button" class="btn btn-primary">All</button>
+                <button id="filter-original" type="button" class="btn btn-outline-primary">Original Titles</button>
+                <button id="filter-contributed" type="button" class="btn btn-outline-primary">Contributed Works</button>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                <div class="col scale-animation scale-click game-cover" data-game-type="original">
+					<div>
+						<img class="rating" src="img/Rating Pending.webp"/>
+						<img class="img-fluid" src="img/HS.webp"/>
+						<p class="spine">HS</p>
+						<div class="cover-back"></div>
+					</div>
+					<center><p>Secret Next Project (TBA)</p></center>
+				</div>
+				<a href="/games/schim/" class="col scale-animation scale-click game-cover" data-game-type="original">
+					<div>
+						<img class="rating" src="img/Everyone.webp"/>
+						<img class="img-fluid" src="img/SCHiM.webp"/>
+						<p class="spine">SCHiM</p>
+						<div class="cover-back"></div>
+					</div>
+					<center><p>SCHiM (2024)</p></center>
+				</a>
+                
+				<a href="/games/skirmish/" class="col scale-animation scale-click game-cover" data-game-type="contributed">
+					<div>
+						<img class="rating" src="img/Rating Pending.webp"/>
+						<img class="img-fluid" src="img/Skirmish.webp"/>
+						<p class="spine">Skirmish</p>
+						<div class="cover-back"></div>
+					</div>
+					<center><p>Skirmish (TBA)</p></center>
+				</a>
+			</div>
             <br><br><br><br>
             <center id="footer-disclaimer">&copy;&nbsp;2025&nbsp;Ewoud&nbsp;van&nbsp;der&nbsp;Werf - Website&nbsp;<a target="_blank" href="https://github.com/Ewoud3D/ewoud.dev">source&nbsp;code&nbsp;on&nbsp;GitHub</a>.</center>
             <br>
@@ -108,6 +111,7 @@
     </body>
     
     <script src="../js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     <script src="../js/typewriter.js"></script>
     <script src="../js/footer-disclaimer.js"></script>
 </html>
