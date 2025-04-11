@@ -1,0 +1,22 @@
+baseURL = "https://ewoud.dev/"
+title = "Ewoud van der Werf"
+theme = "meindert"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Fun"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Games"
+    url = "/games"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "press"
+    name = "Public Speaking & Interviews"
+    url = "/press"
+    weight = 30
