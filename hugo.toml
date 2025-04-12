@@ -10,7 +10,7 @@ theme = "meindert"
     weight = 10
 
   [[menu.main]]
-    identifier = "about"
+    identifier = "games"
     name = "Games"
     url = "/games"
     weight = 20
