@@ -355,3 +355,10 @@ a {
 .game-overview {
   font-size: 20px;
 }
+
+p:has(+ ul) {
+  margin-bottom: 0;
+}
+p + ul {
+  margin-top: 0;
+}

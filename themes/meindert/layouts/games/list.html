@@ -16,7 +16,11 @@
 			<p class="spine">{{ .Title }}</p>
 			<div class="cover-back"></div>
 		</div>
-		<center><p>{{ .Title }} ({{ .Params.Release }})</p></center>
+		{{ $releaseYear := "TBA" }}
+		{{ if .Date }}
+		{{ $releaseYear = .Date.Format "2006" }}
+		{{ end }}
+		<center><p>{{ .Title }} ({{ $releaseYear }})</p></center>
 	</a>
 	{{ end }}
 </div>

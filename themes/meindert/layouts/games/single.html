@@ -1,0 +1,43 @@
+{{ $releaseYear := "TBA" }}
+{{ if .Date }}
+{{ $releaseYear = .Date.Format "2 January, 2006" }}
+{{ end }}
+
+{{ partial "header.html" . }}
+<br><br>
+<div class="row">
+	<div class="col-12 col-lg-8">
+		<div class="ratio ratio-16x9">
+			<iframe class="video" src="https://www.youtube.com/embed/{{ .Params.Trailer }}?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+		<br>
+	</div>
+	<div class="col">
+		<h1><b>{{ .Title }}</b></h1>
+		<p class="game-overview">
+			<b>Release Date</b> {{ $releaseYear }}<br>
+			<b>Platforms</b> {{ if .Params.Steam }}<a href="{{ .Params.Steam }}" target="_blank">Steam</a>{{ end }}{{ if .Params.Switch }}, <a href="{{ .Params.Switch }}" target="_blank">Switch</a>{{ end }}{{ if .Params.playstation }}, <a href="{{ .Params.Playstation }}" target="_blank">PS4/PS5</a>{{ end }}{{ if .Params.Xbox }}, <a href="{{ .Params.Xbox }}" target="_blank">Xbox One/Series X|S</a>{{ end }}<br>
+			<b>Developer</b> {{ .Params.Developer }}<br>
+			<b>Publisher</b> {{ .Params.Publisher }}
+		</p>
+		<img class="img-fluid d-none d-lg-block" src="img/character-1.webp"/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12 col-lg-8">
+		{{ .Content }}
+	</div>
+	<div class="col">
+		<a href="img/screenshot-1.webp"><img class="img-fluid game-screenshot" src="img/screenshot-1.webp"/></a>
+		<a href="img/screenshot-2.webp"><img class="img-fluid game-screenshot" src="img/screenshot-2.webp"/></a>
+		<a href="img/screenshot-3.webp"><img class="img-fluid game-screenshot" src="img/screenshot-3.webp"/></a>
+	</div>
+</div>
+<br><br>
+<div class="row">
+	<div class="col"></div>
+	<img class="col-6 col-lg-3 img-fluid" src="img/character-2.webp"/>
+	<div class="col"></div>
+</div>
+
+{{ partial "footer.html" . }}
