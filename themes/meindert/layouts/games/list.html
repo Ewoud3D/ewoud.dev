@@ -21,4 +21,8 @@
 	{{ end }}
 </div>
 
+{{ with resources.Get "js/game-library.js" }}
+<script src="{{ .RelPermalink }}"></script>
+{{ end }}
+
 {{ partial "footer.html" . }}
