@@ -31,4 +31,6 @@ Can you get back to them before it's too late?
 I came up with the idea of SCHiM during my final exam at Friesland College in 2020, and started development with Extra Nice. My work includes the creation of all the shaders, programming, 3D modelling and marketing.  
 SCHiM is my first original indie title that I got to work on full-time, from start to finish. Together with Nils Slijkerman from Extra Nice, we were able to show our game at multiple events all over the world, and proudly put our name on the map as the *SCHiM developers*.
 
-#### *Among this year’s best-looking releases from small studios* - Matt Gardner, Forbes
+{{< line-break >}}
+
+#### *Among this year’s best-looking releases from small studios*{{< line-break >}}- [Matt Gardner, Forbes](https://www.forbes.com/sites/mattgardner1/2024/07/17/schim-review-xbox-what-we-pursue-in-the-shadows/)
