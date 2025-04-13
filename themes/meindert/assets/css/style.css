@@ -34,19 +34,19 @@ a {
   color: #FF5722;
 }
 
-.square:after {
+.square > a > div:after {
   content: "";
   display: block;
   padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
-.rectangle:after {
+.rectangle > a > div:after {
   content: "";
   display: block;
   padding-top: 47%;
 }
 
-.tile {
+.tile > a > div {
   background-color: #EDEBCA;
   border-radius: 18px;
 

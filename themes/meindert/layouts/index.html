@@ -3,10 +3,10 @@
 <br><br>
 <div class="row gx-4 gy-4 row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 {{ range (where .Site.RegularPages "Section" "featured") }}
-{{ $thumb := .Resources.GetMatch "thumb.*" }}
-	<div class="{{ if not .Params.Rectangle }}col{{ else }}col-12 col-md-8 col-lg-6 col-xl-4-8{{ end }}">
+	{{ $thumb := .Resources.GetMatch "thumb.*" }}
+	<div class="tile {{ if not .Params.Rectangle }}col square{{ else }}col-12 col-md-8 col-lg-6 col-xl-4-8 rectangle{{ end }}">
 		<a href="{{ .Params.Url }}">
-			<div class="tile scale-animation scale-click {{ if not .Params.Rectangle }}square{{ else }}rectangle{{ end }}" {{ if $thumb }}style="background-image: url('{{ $thumb.RelPermalink }}');"{{ end }}>
+			<div class="scale-animation scale-click" {{ if $thumb }}style="background-image: url('{{ $thumb.RelPermalink }}');"{{ end }}>
 				{{ if not $thumb }}
 				<h4><b>{{ .Title }}</b><br>{{ .Params.Subtitle }}</h4>
 				{{ end }}
@@ -18,3 +18,9 @@
 </div>
 
 {{ partial "footer.html" . }}
+
+{{ with resources.Get "js/tile-arranger.js" }}
+<script src="{{ .RelPermalink }}"></script>
+{{ end }}
+
+</html>
