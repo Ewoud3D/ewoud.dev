@@ -362,3 +362,7 @@ p:has(+ ul) {
 p + ul {
   margin-top: 0;
 }
+
+@media (min-width:1200px) {
+  .col-xl-4-8 {flex: 0 0 auto; width: 40%;}
+}
