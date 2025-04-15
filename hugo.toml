@@ -11,13 +11,19 @@ pluralizeListTitles = false
     weight = 10
 
   [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+
+  [[menu.main]]
     identifier = "games"
     name = "Games"
     url = "/games"
-    weight = 20
+    weight = 30
 
   [[menu.main]]
     identifier = "press"
     name = "Public Speaking & Interviews"
     url = "/press"
-    weight = 30
+    weight = 40
