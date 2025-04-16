@@ -1,6 +1,7 @@
 ---
 title: "SCHiM"
 date: 2024-07-18
+weight: 1
 params:
   type: "original"
   rating: "/img/Everyone.webp"
