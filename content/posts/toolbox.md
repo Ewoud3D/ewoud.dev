@@ -1,8 +1,9 @@
 ---
 title: "Toolbox"
+summary: "Talking about the tools I use for game development, content creation and web development."
 date: 2024-08-13
 params:
-  subtitle: "My personal SDK"
+  subtitle: "My Personal SDK"
 ---
 My very first interaction with any creative software was with Windows Movie Maker when I was 9. Using my mom's camcorder I used to shoot my Lego minifigures picture by picture and watch the movements unfold in the primitive editing software.  
 At that age, I always wanted to become an animator first. Just before entering high school I took an interest in computer-generated animation and found out about Blender. A program that would change my life, and introduce me to game development.

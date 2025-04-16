@@ -1,5 +1,6 @@
 ---
 title: "SCHiM"
+summary: "A brief reflection of the 4+ years of development of SCHiM."
 date: 2024-08-13
 params:
   subtitle: "A Retrospective"

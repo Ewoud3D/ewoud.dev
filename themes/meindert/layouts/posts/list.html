@@ -9,7 +9,8 @@
 	<img src="{{ .RelPermalink }}"/>
 	{{ end }}
 	<div>
-	<h2>{{ $page.Title }}</h2>
+	<h3><b>{{ $page.Title }}:</b><br>{{ $page.Params.Subtitle }}</h3>
+	<p>{{ $page.Summary }}</p>
 	<div class="press-date">{{ $page.Date.Format "2 January, 2006" }}</div>
 	</div>
 	</a>
