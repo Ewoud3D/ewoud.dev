@@ -1,6 +1,5 @@
 baseURL = "https://ewoud.dev/"
 title = "Ewoud van der Werf"
-theme = "meindert"
 pluralizeListTitles = false
 
 [menu]
