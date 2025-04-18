@@ -37,4 +37,5 @@ The console port is scheduled to release 8 May, 2025!
 
 {{< line-break >}}
 
-#### *A quote from the developer*{{< line-break >}}- [John Smith](https://www.forbes.com/sites/mattgardner1/2024/07/17/schim-review-xbox-what-we-pursue-in-the-shadows/)
+#### "*Working with Ewoud has made the difficult task of porting a game as easy at it can be (and it's not easy!).*"{{< line-break >}}- [Jeremy Fryc, Dexter Team Games](https://www.dexterstardust.com/about-contact)
+"*We met several times over video-chat and discussed certain changes that might be made to the game input so that it translated better to a gamepad. Even when some of these didn't pan out, Ewoud never complained. He was able to implement excellent gamepad support with no compromises. His extensive knowledge of Unity and developing his own games translates perfectly into his role of porting games. While I initially explained the architecture of game's code and folder structure, he didn't need his hand held; he was able to find solutions for complex issues that arose all on his own. He was very communicative throughout the process and gave me updates unprompted. It was an excellent experience!*"

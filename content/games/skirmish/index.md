@@ -36,4 +36,4 @@ It was a refreshing experience to follow my internship at Extra Nice. I'm glad E
 
 {{< line-break >}}
 
-#### *Ewoud is a blast to work with! He worked on some cool concepts that we used in the game that he conveyed as social media content*{{< line-break >}}- [Nils Slijkerman, Extra Nice](https://www.linkedin.com/in/nils-slijkerman-531835b1/)
+#### "*Ewoud is a blast to work with! He worked on some cool concepts that we used in the game that he conveyed as social media content.*"{{< line-break >}}- [Nils Slijkerman, Extra Nice](https://www.linkedin.com/in/nils-slijkerman-531835b1/)

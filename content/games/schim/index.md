@@ -34,4 +34,4 @@ SCHiM is my first original indie title that I got to work on full-time, from sta
 
 {{< line-break >}}
 
-#### *Among this year’s best-looking releases from small studios*{{< line-break >}}- [Matt Gardner, Forbes](https://www.forbes.com/sites/mattgardner1/2024/07/17/schim-review-xbox-what-we-pursue-in-the-shadows/)
+#### "*Among this year’s best-looking releases from small studios*"{{< line-break >}}- [Matt Gardner, Forbes](https://www.forbes.com/sites/mattgardner1/2024/07/17/schim-review-xbox-what-we-pursue-in-the-shadows/)
