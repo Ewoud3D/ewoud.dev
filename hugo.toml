@@ -1,0 +1,29 @@
+baseURL = "https://ewoud.dev/"
+title = "Ewoud van der Werf"
+pluralizeListTitles = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Fun"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "games"
+    name = "Games"
+    url = "/games"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "press"
+    name = "Public Speaking & Interviews"
+    url = "/press"
+    weight = 40
+
+[outputs]
+    page = ["HTML"]
+    home = ["HTML"]
+    section = ["HTML"]
+    taxonomyTerm = ["HTML"]
+    taxonomy = ["HTML"]

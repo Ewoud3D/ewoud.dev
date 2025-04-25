@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+
+<div class="filters">
+	<button id="filter-all" type="button" class="btn btn-primary">All</button>
+	<button id="filter-original" type="button" class="btn btn-outline-primary">Original Titles</button>
+	<button id="filter-contributed" type="button" class="btn btn-outline-primary">Contributed Works</button>
+</div>
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+	{{ range.Data.Pages }}
+	<a href="{{ .RelPermalink }}" class="col scale-animation scale-click game-cover" data-game-type="{{ .Params.Type }}">
+		<div>
+			<img class="rating" src="{{ .Params.Rating }}"/>
+			{{ with .Resources.GetMatch "cover.*" }}
+				<img class="img-fluid" src="{{ .RelPermalink }}"/>
+			{{ end }}
+			<p class="spine">{{ .Title }}</p>
+			<div class="cover-back"></div>
+		</div>
+		{{ $releaseYear := "TBA" }}
+		{{ if .Date }}
+		{{ $releaseYear = .Date.Format "2006" }}
+		{{ end }}
+		<center><p>{{ .Title }} ({{ $releaseYear }})</p></center>
+	</a>
+	{{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+
+{{ with resources.Get "js/game-library.js" }}
+<script src="{{ .RelPermalink }}"></script>
+{{ end }}
+
+</html>

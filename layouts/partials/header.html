@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+
+        <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+        <meta name="description" content="Ewoud van der Werf is a game developer, programmer and technical artist. He released the shadow platformer, SCHiM, in 2024.">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        {{ with resources.Get "css/style.css" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{ end }}
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#132743">
+        <meta name="msapplication-TileColor" content="#edc988">
+        <meta name="theme-color" content="#edc988">
+
+        <link rel="me" href="https://mastodon.gamedev.place/@ewoud">
+    </header>
+
+    <body>
+		<div class="container">
+			{{ partial "nav.html" . }}
+			
+			<br>
+			
+			<div class="row">
+				<div class="col"></div>
+                {{ with resources.Get "img/profile.webp" }}
+				<a href="/" class="col-7 col-md-5 col-lg-4 col-xl-3"><img class="img-fluid profile" src="{{ .RelPermalink }}"/></a>
+                {{ end }}
+				<div class="col"></div>
+			</div>
+
+			<br>
+			<center><h1><b>{{ .Site.Title }}</b></h1>
+			<h2 class="typewrite" data-period="2000" data-type='[ "Technical Artist", "Programmer", "Console Porting", "Indie Game Developer", "3D Artist", "Indie Marketing" ]'>Technical Artist</h2></center>
