@@ -3,16 +3,19 @@
 <div class="row gy-3">
 {{ $pages := .Data.Pages }}
 {{ range $index, $page := $pages }}
+
+	{{ $page.Scratch.Set "timeUnit" "min" }}
+
 	<div class="col-2 d-none d-xl-block"></div>
-	<a href="{{ .RelPermalink }}" class="col press-item scale-animation scale-click">
-	{{ with $page.Resources.GetMatch "thumb.*" }}
-	<img src="{{ .RelPermalink }}"/>
-	{{ end }}
-	<div>
-	<h3><b>{{ $page.Title }}:</b><br>{{ $page.Params.Subtitle }}</h3>
-	<p>{{ $page.Summary }}</p>
-	<div class="press-date">{{ $page.Date.Format "2 January, 2006" }}</div>
-	</div>
+	<a href="{{ .RelPermalink }}" class="col post-item scale-animation scale-click">
+		{{ with $page.Resources.GetMatch "thumb.*" }}
+		<img src="{{ .RelPermalink }}"/>
+		{{ end }}
+		<div>
+			<h3><b>{{ $page.Title }}:</b><br>{{ $page.Params.Subtitle }}</h3>
+			<p>{{ $page.Summary }}</p>
+			<div class="post-date">{{ $page.Date.Format "2 January, 2006" }} · {{.ReadingTime}} {{ .Scratch.Get "timeUnit" }}</div>
+		</div>
 	</a>
 	<div class="col-2 d-none d-xl-block"></div>
 

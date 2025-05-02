@@ -221,6 +221,30 @@ a {
       padding-left: 0px;
   }
 
+  .post-item {
+      margin: 00px 10px 0px 10px;
+  }
+
+  .post-item > div > h2 {
+      font-size: 22px;
+  }
+
+  .post-item > div > p {
+      font-size: 0px;
+  }
+
+  .post-item > img {
+      height: 150px;
+  }
+
+  .post-item > div {
+      padding-left: 0px;
+  }
+
+  .post-item > img {
+    width: 180px;
+  }
+
   .navbar {
       padding-top: 12px;
   }
@@ -357,6 +381,34 @@ p:has(+ ul) {
 }
 p + ul {
   margin-top: 0;
+}
+
+.post-item {
+  background-color: #EDEBCA;
+  border-radius: 28px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.post-item > img {
+  border-radius: 18px;
+  height: 180px;
+  object-fit: cover;
+  margin: 10px;
+  float: right;
+}
+
+.post-item > div {
+  padding: 18px;
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.post-date {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
 }
 
 @media (min-width:1200px) {
