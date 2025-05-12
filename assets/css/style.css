@@ -457,6 +457,11 @@ p + ul {
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
+  /* transition: .25s ease-in-out; */
+}
+
+/* temporary fix for Firefox collapse animation, used along with nav-bar-toggler.js */
+.toggler-animation {
   transition: .25s ease-in-out;
 }
 
