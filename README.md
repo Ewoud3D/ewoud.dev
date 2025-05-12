@@ -11,5 +11,7 @@ Just like my game [SCHiM](https://schimgame.com/), I tried to keep the palette c
 Original profile illustration created by the artist [Oscar Westberg](https://oscarwestberg.se/).
 ## Hugo
 I am using the open-source site framework [Hugo](https://gohugo.io/), this makes it easy for me to manage site content and make adjustments.
+## European Hosted
+In May 2025, I moved ewoud.dev from [Firebase](https://firebase.google.com/) to [statichost.eu](https://statichost.eu/). I aim to support European services as much as possible. Therefore, the appropriate alternatives for the current version control service and domain registrar will be considered.
 
 ![Screenshot from the ewoud.dev front page.](screenshots/schim-page.jpg)
