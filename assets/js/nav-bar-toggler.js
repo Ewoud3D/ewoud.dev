@@ -2,9 +2,9 @@
 
 var icons = document.getElementsByClassName("toggler-icon");
 
-window.onload = (event) =>
+window.addEventListener("load", () =>
 {
 	for (const icon of icons) {
 		icon.classList.add("toggler-animation");
 	}
-};
+}); 
